@@ -90,6 +90,32 @@ if mods["snouz_better_asteroid_collector"] then
   data.raw["item"]["snouz_better_asteroid_collector"].default_import_location = "panglia"
 end
 
+if mods["snouz_space_platform_hull"] then
+  data.raw["recipe"]["snouz_wall_hull"].ingredients = 
+  {
+    {type = "item", name = "stone-wall", amount = 1},
+    {type = "item", name = "panglia_panglite_fiber", amount = 5},
+    {type = "item", name = "space-platform-foundation", amount = 1},
+  }
+  data.raw["item"]["snouz_wall_hull"].default_import_location = "panglia"
+  data.raw["technology"]["snouz_wall_hull"].prerequisites = {"panglia_panglite_fiber"}
+  data.raw["technology"]["snouz_wall_hull"].unit.ingredients =
+  {
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"military-science-pack", 1},
+    {"chemical-science-pack", 1},
+    {"production-science-pack", 1},
+    {"utility-science-pack", 1},
+    {"space-science-pack", 1},
+    --{"metallurgic-science-pack", 1},
+    --{"electromagnetic-science-pack", 1},
+    --{"agricultural-science-pack", 1},
+    --{"cryogenic-science-pack", 1},
+    --{"promethium-science-pack", 1}
+  }
+end
+
 if mods["snouz_long_electric_gun_turret"] then
   data.raw["recipe"]["snouz_long_electric_gun_turret"].ingredients =
   {
