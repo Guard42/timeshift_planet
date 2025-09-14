@@ -12,11 +12,18 @@ local minutes = 60 * seconds
 ------------------------------------------------------
 
 data:extend({
+
+  {
+    type = "item-subgroup",
+    name = "moshine-datacells",
+    group = "intermediate-products",
+    order = "pb"
+  },
   {
     type = "item-subgroup",
     name = "panglia-processes",
     group = "intermediate-products",
-    order = "pb"
+    order = "pc"
   },
   {
     type = "item-subgroup",
@@ -316,26 +323,30 @@ data:extend({
 data:extend({
 
   {
-    type = "item",
+    type = "tool",
     name = "datacell-dna-raw",
     icon = icons .. "datacell-dna-raw.png",
-    subgroup = "panglia-processes",
-    order = "c[cloning]-aa",
+    subgroup = "moshine-datacells",
+    order = "b[panglia]-aa",
     inventory_move_sound = item_sounds.metal_small_inventory_move,
     pick_sound = item_sounds.metal_small_inventory_pickup,
     drop_sound = item_sounds.metal_small_inventory_move,
-    stack_size = 50,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    factoriopedia_durability_description_key = "description.factoriopedia-science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value",
+    stack_size = 40,
     default_import_location = "panglia",
     random_tint_color = item_tints.iron_rust,
     plant_result = "processing-grid-process-dna",
-    weight = 10*kg,
+    weight = 5*kg,
   },
   {
     type = "recipe",
     name = "datacell-dna-raw",
     icon = icons .. "datacell-dna-raw-recipe.png",
-    subgroup = "panglia-processes",
-    order = "c[cloning]-bb",
+    subgroup = "moshine-datacells",
+    order = "b[panglia]-bb",
     category = "cloning",
     energy_required = 1 * beacon_multiplier,
     ingredients = {
@@ -351,17 +362,21 @@ data:extend({
     enabled = false,
   },
   {
-    type = "item",
+    type = "tool",
     name = "datacell-dna-sequenced",
     icon = icons .. "datacell-dna-sequenced.png",
-    subgroup = "panglia-processes",
-    order = "c[cloning]-cc",
+    subgroup = "moshine-datacells",
+    order = "b[panglia]-cc",
     inventory_move_sound = item_sounds.metal_small_inventory_move,
     pick_sound = item_sounds.metal_small_inventory_pickup,
     drop_sound = item_sounds.metal_small_inventory_move,
-    stack_size = 50,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    factoriopedia_durability_description_key = "description.factoriopedia-science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value",
+    stack_size = 40,
     default_import_location = "panglia",
-    weight = 10*kg
+    weight = 5*kg
   },
 
 })

@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.2.2
+Version: 0.3.0
 Date: 2025-09
   Changes:
     - Added snouz_space_platform_hull submod
@@ -7,6 +7,7 @@ Date: 2025-09
   UI:
     - Changed dust icon and UI placement
     - Changed crusher icon
+    - Made datacells subgroup, changed datacells to stats of moshine's (40 stacks, 5kg)
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.1
 Date: 2025-09-09

@@ -143,3 +143,23 @@ if mods["snouz_long_electric_gun_turret"] then
     --{"promethium-science-pack", 1}
   }
 end
+
+
+
+
+data.raw["tool"]["hard-drive"].subgroup = "moshine-datacells"
+data.raw["tool"]["hard-drive"].order = "a[moshine]-aa"
+data.raw["tool"]["datacell-raw-data"].subgroup = "moshine-datacells"
+data.raw["tool"]["datacell-raw-data"].order = "a[moshine]-bb"
+data.raw["recipe"]["datacell-add-raw-data"].subgroup = "moshine-datacells"
+data.raw["recipe"]["datacell-add-raw-data"].order = "a[moshine]-bc"
+data.raw["recipe"]["datacell-remove-raw-data"].subgroup = "moshine-datacells"
+data.raw["recipe"]["datacell-remove-raw-data"].order = "a[moshine]-bd"
+
+data.raw["tool"]["datacell-equation"].subgroup = "moshine-datacells"
+data.raw["tool"]["datacell-equation"].order = "a[moshine]-cc"
+data.raw["recipe"]["datacell-add-equation"].subgroup = "moshine-datacells"
+data.raw["recipe"]["datacell-add-equation"].order = "a[moshine]-cd"
+
+data.raw["tool"]["datacell-solved-equation"].subgroup = "moshine-datacells"
+data.raw["tool"]["datacell-solved-equation"].order = "a[moshine]-dd"
