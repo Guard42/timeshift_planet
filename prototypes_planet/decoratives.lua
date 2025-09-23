@@ -306,6 +306,8 @@ data:extend({
         --{type = "item", name = "tungsten-ore", amount_min = 0, amount_max = 5},
         {type = "item", name = "panglia_igneous_rock", amount_min = 12, amount_max = 73},
 
+        {type = "item", name = "uranium-238", amount_min = 0, amount_max = 5, probability = 0.4},
+
       }
     },
     resistances =

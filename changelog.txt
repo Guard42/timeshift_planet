@@ -4,15 +4,19 @@ Date: 2025-09
   Changes:
     - Added rocks with resources
     - Added Igneous rock (solidified lava) that you can turn ito lava
+    - Removed recipe to make crude oil
     - Added lubricant recipe from Branbalite (instead of heavy oil)
     - Added rocket fuel recipe from Branbalite (instead of light oil)
     - Added advanced circuit recipe from panglite fiber (instead of plastic)
     - Changed universe precursor custom recipe, and its name to Seed for mini-universe
-    - Added Seed for volcanic mini-universe, giving different resources from the universe incubator (still to test)
+    - Added "Seed for volcanic mini-universe", giving different resources from the universe incubator (still to test)
     - Planet is supposed to be doable without: oil, plastic and coal (still to test)
     - Re-removed the possibility to recycle panglite (can't have legendary one)
     - Removed fast zone map setting
     - Panderoots won't spawn less than 30 tiles apart
+    - Planet now needs foundries (unlocks after vulcanus)
+    - Panglite fiber is now electronics type instead of uranium process
+    - Tech tree re-organized
   Graphics:
     - Panglite fiber icon reworked
     - Optimized a lot of images in assets mod

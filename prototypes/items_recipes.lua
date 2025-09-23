@@ -176,7 +176,8 @@ data:extend({
     --category = "chemistry",
     subgroup = "panglia-processes",
     order = "a[base]-ff",
-    category = "centrifuging",
+    --category = "centrifuging",
+    category = "electronics",
     enabled = false,
     auto_recycle = false,
     energy_required = 5 * beacon_multiplier,
@@ -191,6 +192,7 @@ data:extend({
     },
     main_product = "panglia_panglite_fiber",
     always_show_products = true,
+    always_show_made_in = true,
     allow_productivity = false,
     show_amount_in_title = false,
     crafting_machine_tint =

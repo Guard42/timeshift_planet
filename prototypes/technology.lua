@@ -16,7 +16,7 @@ data:extend({
         use_icon_overlay_constant = true
       },
     },
-    prerequisites = {"agricultural-science-pack"},
+    prerequisites = {"agricultural-science-pack", "foundry"},
     unit =
     {
       count = 800,
@@ -54,50 +54,6 @@ data:extend({
 
   {
     type = "technology",
-    name = "panglia_branbalite_slurry_to_crudeoil",
-    icon = techicons .. "panglia_branbalite_slurry_to_crudeoil.png",
-    icon_size = 256,
-    effects =
-    {
-      --{
-      --  type = "unlock-recipe",
-      --  recipe = "panglia_branbalite_slurry_to_crudeoil"
-      --},
-    },
-    prerequisites = {"panglia_branbalite_slurry"},
-    research_trigger =
-    {
-      type = "craft-fluid",
-      fluid = "panglia_branbalite_slurry",
-      amount = 50,
-    },
-  },
-
-
-  {
-    type = "technology",
-    name = "panglia_igneous_rock_to_lava",
-    icon = techicons .. "panglia_igneous_rock_to_lava.png",
-    icon_size = 256,
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "panglia_igneous_rock_to_lava"
-      },
-    },
-    prerequisites = {"panglia_planet_discovery_panglia", "foundry"},
-    research_trigger =
-    {
-      type = "mine-entity",
-      entity = "panglia-big-rock"
-    },
-  },
-
-
-
-  {
-    type = "technology",
     name = "panglia_panglite_multiplication",
     icon = techicons .. "panglia_panglite_multiplication.png",
     icon_size = 256,
@@ -115,6 +71,112 @@ data:extend({
       entity = "panglia-huge-panglite-rock"
     }
   },
+
+  --[[{
+    type = "technology",
+    name = "panglia_branbalite_slurry_to_crudeoil",
+    icon = techicons .. "panglia_branbalite_slurry_to_crudeoil.png",
+    icon_size = 256,
+    effects =
+    {
+      --{
+      --  type = "unlock-recipe",
+      --  recipe = "panglia_branbalite_slurry_to_crudeoil"
+      --},
+    },
+    prerequisites = {"panglia_branbalite_slurry"},
+    research_trigger =
+    {
+      type = "craft-fluid",
+      fluid = "panglia_branbalite_slurry",
+      amount = 50,
+    },
+  },]]
+
+
+  {
+    type = "technology",
+    name = "panglia_branbalite_slurry_to_lubricant",
+    icon = techicons .. "panglia_branbalite_slurry_to_lubricant.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "panglia_branbalite_slurry_to_lubricant"
+      },
+    },
+    prerequisites = {"panglia_branbalite_slurry"},
+    research_trigger =
+    {
+      type = "craft-fluid",
+      fluid = "panglia_branbalite_slurry",
+      amount = 50,
+    },
+  },
+  {
+    type = "technology",
+    name = "panglia_branbalite_slurry_to_rocket_fuel",
+    icon = techicons .. "panglia_branbalite_slurry_to_rocket_fuel.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "panglia_branbalite_slurry_to_rocket_fuel"
+      },
+    },
+    prerequisites = {"panglia_branbalite_slurry"},
+    research_trigger =
+    {
+      type = "craft-fluid",
+      fluid = "panglia_branbalite_slurry",
+      amount = 1000,
+    },
+  },
+
+
+  {
+    type = "technology",
+    name = "panglia_igneous_rock_to_lava",
+    icon = techicons .. "panglia_igneous_rock_to_lava.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "panglia_igneous_rock_to_lava"
+      },
+    },
+    prerequisites = {"panglia_planet_discovery_panglia"},
+    research_trigger =
+    {
+      type = "mine-entity",
+      entity = "panglia-big-rock"
+    },
+  },
+
+  {
+    type = "technology",
+    name = "panglia_universe_precursor_volcanic",
+    icon = techicons .. "panglia_universe_precursor_volcanic.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "panglia_universe_precursor_volcanic"
+      },
+    },
+    prerequisites = {"panglia_igneous_rock_to_lava", "matter_printer-technology"},
+    research_trigger =
+    {
+      type = "mine-entity",
+      entity = "panglia-big-rock"
+    },
+  },
+
+
 
   {
     type = "technology",
@@ -183,19 +245,95 @@ data:extend({
         type = "unlock-recipe",
         recipe = "panglia_panglite_fiber"
       },
+    },
+    prerequisites = {"panglia_panglite_multiplication"},
+    research_trigger =
+    {
+      type = "craft-item",
+      item = "panglia_panglite",
+      count = 1000,
+    }
+  },
+
+
+
+  {
+    type = "technology",
+    name = "panglia_advanced_circuit_from_panglite_fiber",
+    icon = techicons .. "panglia_advanced_circuit_from_panglite_fiber.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "panglia_advanced_circuit_from_panglite_fiber"
+      },
+    },
+    prerequisites = {"panglia_panglite_fiber"},
+    research_trigger =
+    {
+      type = "craft-item",
+      item = "panglia_panglite_fiber",
+      amount = 50,
+    },
+  },
+
+  {
+    type = "technology",
+    name = "panglia_low_density_structure_from_panglite_fiber",
+    icon = techicons .. "panglia_low_density_structure_from_panglite_fiber.png",
+    icon_size = 256,
+    effects =
+    {
       {
         type = "unlock-recipe",
         recipe = "panglia_low_density_structure_from_panglite_fiber"
       },
     },
-    prerequisites = {"panglia_panglite_multiplication", "uranium-processing"},
+    prerequisites = {"panglia_panglite_fiber"},
     research_trigger =
     {
       type = "craft-item",
-      item = "panglia_panglite",
-      count = 100,
-    }
+      item = "panglia_panglite_fiber",
+      amount = 100,
+    },
   },
+
+
+
+  {
+    type = "technology",
+    name = "panglia_universe_precursor",
+    icon = techicons .. "panglia_universe_precursor.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "panglia_universe_precursor"
+      },
+    },
+    prerequisites = {"panglia_panglite_fiber", "matter_printer-technology", "panglia_universe_precursor_volcanic"},
+    research_trigger =
+    {
+      type = "craft-item",
+      item = "panglia_panglite_fiber",
+      amount = 100,
+    },
+  },
+
+
+------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -405,7 +543,7 @@ data:extend({
 
 if data.raw["technology"]["matter_printer-technology"] then
   table.insert(data.raw["technology"]["matter_printer-technology"].prerequisites, "panglia_advanced_optics_nanotech")
-  table.insert(data.raw["technology"]["matter_printer-technology"].prerequisites, "panglia_panglite_fiber")
+  table.insert(data.raw["technology"]["matter_printer-technology"].prerequisites, "panglia_panglite_multiplication")
 end
   --table.insert(data.raw["technology"]["panglia_crusher"].effects, {type = "unlock-recipe", recipe = "panglia_universe_precursor"})
 
@@ -420,14 +558,12 @@ end
 
 
 
-if mods["moshine"] then
-  table.insert(data.raw["technology"]["panglia_advanced_optics_nanotech"].prerequisites, "planet-discovery-moshine")
-  data.raw["technology"]["panglia_advanced_optics_nanotech"].research_trigger = {
-    type = "craft-item",
-    item = "glass",
-    count = 10
-  }
-end
+table.insert(data.raw["technology"]["panglia_advanced_optics_nanotech"].prerequisites, "planet-discovery-moshine")
+data.raw["technology"]["panglia_advanced_optics_nanotech"].research_trigger = {
+  type = "craft-item",
+  item = "glass",
+  count = 10
+}
 
 
 

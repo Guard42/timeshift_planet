@@ -32,8 +32,9 @@ if data.raw.recipe["matter_printer"] then
   data.raw.recipe["matter_printer"].ingredients =
   {
     {type = "item", name = "supercomputer", amount = 1},
-    {type = "item", name = "advanced-circuit", amount = 10},
-    {type = "item", name = "productivity-module", amount = 10},
+    {type = "item", name = "electromagnetic-plant", amount = 1},
+    {type = "item", name = "electronic-circuit", amount = 10},
+    --{type = "item", name = "productivity-module", amount = 10},
     --{type = "item", name = "uranium-235", amount = 5},
     {type = "item", name = "panglia_panglite", amount = 10},
   }
