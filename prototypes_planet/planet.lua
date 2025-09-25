@@ -149,6 +149,7 @@ planet_map_gen.panglia = function()
           ["crater-cliff"] = {},
           ["panglia_branbalite_plant"] = {},
           ["panglia-big-rock"] = {},
+          ["panglia-huge-igneous-rock"] = {},
           --["vulcanus-chimney"] = {},
           --["vulcanus-chimney-faded"] = {},
           --["vulcanus-chimney-cold"] = {},

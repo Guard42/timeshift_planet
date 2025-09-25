@@ -9,7 +9,7 @@
   "dependencies": [
     "base",
     "space-age",
-    "panglia_planet_assets >= 0.1.1",
+    "panglia_planet_assets >= 0.1.2",
     "Moshine >= 1.0.28",
     "thinking_brain >= 1.2.3",
     "matter_printer >= 0.2.0",

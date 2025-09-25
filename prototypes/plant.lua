@@ -445,6 +445,8 @@ plant.autoplace =
   }
 }
 plant.variations = gleba_tree_variations("branbalite", 8, 4, 1.3, 640, 560, util.by_pixel(52, -73))
+plant.surface_conditions = nil
+plant.order = "zaaaa"
 
 plant.colors = {
   {r = 255, g = 255, b =  255},
@@ -463,6 +465,27 @@ plant.agricultural_tower_tint =
 }
 plant.growth_ticks = 2 * minutes
 plant.map_color = {45,207,235,230}
+
+plant.factoriopedia_simulation = 
+{
+  planet = "panglia",
+  hide_factoriopedia_gradient = true,
+  init =
+  [[
+    game.simulation.camera_zoom = 1.4
+    game.simulation.camera_position = {-0.5, 0}
+    for x = -10, 9, 1 do
+      for y = -4, 4 do
+        game.surfaces[1].set_tiles{{position = {x, y}, name = "panglia-volcanic-cracks"}}
+      end
+    end
+
+    game.surfaces[1].create_entity{name = "panglia_branbalite_plant", position = {x=-2.54, y=-0.76}, tick_grown = 1}
+    game.surfaces[1].create_entity{name = "panglia_branbalite_plant", position = {x=-4.68, y=1.83}, tick_grown = 1000}
+    game.surfaces[1].create_entity{name = "panglia_branbalite_plant", position = {x=-0.10, y=0.67}, tick_grown = 10000}
+    game.surfaces[1].create_entity{name = "panglia_branbalite_plant", position = {x=4.80, y=1.69}, tick_grown = 1}
+  ]]
+}
 
 data:extend({plant})
 
