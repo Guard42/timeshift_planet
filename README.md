@@ -7,7 +7,7 @@ It has custom music, unique terrain, a tech tree, 5 new machines...
 
 Right now, it requires Moshine.
 
-![diagram1](https://i.imgur.com/40qzq1E.png)![diagram2](https://i.imgur.com/QIRLjyM.png)
+![diagram1](https://i.imgur.com/OQoxrwr.png)
 
 Feedback very welcome, here or discord @snouz. The things I'm most interested in tweaking based on feedback: 
 - recipe price, time and probability

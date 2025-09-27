@@ -1,4 +1,23 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.3
+Date: 2025-09-27
+  Balance:
+    - Divided fuel value of branbalite slurry by 1000, multiplied effectivity of panderoots by 40000
+  Graphics:
+    - Changed branbalite slurry color in pipes/overlay
+---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+Date: 2025-09-27
+  Balance:
+    - Tech volcanic mini-universe now uses classic science instead of trigger (it was triggering all the time before unlocked)
+    - Tech hyper crusher tech requires advanced circuit from panglite fiber
+    - Tech Branbalite slurry to rocket fuel requires volcanic micro-universe
+    - Tech volcanic mini-universe requires branbalite slurry to lubricant
+    - Recipe mini-universe simulation doesn't output solid fuel anymore
+    - Recipe crusher: added advanced circuits and panglite fibers
+    - Composite rocks: added stone, raised amount of uranium, iron and copper
+    - Huge panglite patches: removed non-panglite items
+---------------------------------------------------------------------------------------------------
 Version: 0.4.1
 Date: 2025-09-26
   Balance:

@@ -55,6 +55,9 @@ data:extend({
       {type = "item", name = "steel-furnace", amount = 1},
       {type = "item", name = "crusher", amount = 1},
       {type = "item", name = "chemical-plant", amount = 1},
+
+      {type = "item", name = "advanced-circuit", amount = 5},
+      {type = "item", name = "panglia_panglite_fiber", amount = 10},
     },
     --surface_conditions = {{ property = "moshine-exclusive", min = 1, max = 1}},
     results = {{type = "item", name = "panglia_crusher", amount = 1}},

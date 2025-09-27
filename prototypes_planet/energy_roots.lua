@@ -92,7 +92,7 @@ data:extend({
     dying_explosion = "steam-engine-explosion",
     --alert_icon_shift = util.by_pixel(0, -12),
     --alert_icon_scale = 0,
-    effectivity = 1,
+    effectivity = 40000,
     fluid_usage_per_tick = 0.1,
     allow_copy_paste = false,
     burns_fluid = true,

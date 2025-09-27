@@ -114,26 +114,6 @@ data:extend({
       amount = 50,
     },
   },
-  {
-    type = "technology",
-    name = "panglia_branbalite_slurry_to_rocket_fuel",
-    icon = techicons .. "panglia_branbalite_slurry_to_rocket_fuel.png",
-    icon_size = 256,
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "panglia_branbalite_slurry_to_rocket_fuel"
-      },
-    },
-    prerequisites = {"panglia_branbalite_slurry"},
-    research_trigger =
-    {
-      type = "craft-fluid",
-      fluid = "panglia_branbalite_slurry",
-      amount = 1000,
-    },
-  },
 
 
   {
@@ -168,12 +148,47 @@ data:extend({
         recipe = "panglia_universe_precursor_volcanic"
       },
     },
-    prerequisites = {"panglia_igneous_rock_to_lava", "matter_printer-technology"},
+    prerequisites = {"panglia_igneous_rock_to_lava", "matter_printer-technology", "panglia_branbalite_slurry_to_lubricant"},
+    unit =
+    {
+      count = 800,
+      ingredients =
+      {
+        --{"automation-science-pack", 1},
+        --{"logistic-science-pack", 1},
+        --{"military-science-pack", 1},
+        --{"chemical-science-pack", 1},
+        --{"production-science-pack", 1},
+        --{"utility-science-pack", 1},
+        {"space-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        --{"agricultural-science-pack", 1},
+        --{"cryogenic-science-pack", 1},
+        --{"promethium-science-pack", 1}
+      },
+      time = 60
+    },
+  },
+
+  {
+    type = "technology",
+    name = "panglia_branbalite_slurry_to_rocket_fuel",
+    icon = techicons .. "panglia_branbalite_slurry_to_rocket_fuel.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "panglia_branbalite_slurry_to_rocket_fuel"
+      },
+    },
+    prerequisites = {"panglia_branbalite_slurry", "panglia_universe_precursor_volcanic"},
     research_trigger =
     {
       type = "craft-fluid",
-      fluid = "lava",
-      amount = 100
+      fluid = "panglia_branbalite_slurry",
+      amount = 1000,
     },
   },
 
@@ -202,37 +217,6 @@ data:extend({
 
 
 
-  {
-    type = "technology",
-    name = "panglia_crusher",
-    icon = techicons .. "panglia_crusher.png",
-    icon_size = 256,
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "panglia_crusher",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "panglia_dust_dummy_recipe",
-      }
-    },
-    prerequisites = {"matter_printer-technology", "panglia_branbalite_slurry"},
-    unit =
-    {
-      count = 1000,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"space-science-pack", 1},
-      },
-      time = 60
-    },
-  },
 
 
   {
@@ -276,6 +260,39 @@ data:extend({
       type = "craft-item",
       item = "panglia_panglite_fiber",
       amount = 50,
+    },
+  },
+
+
+  {
+    type = "technology",
+    name = "panglia_crusher",
+    icon = techicons .. "panglia_crusher.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "panglia_crusher",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "panglia_dust_dummy_recipe",
+      }
+    },
+    prerequisites = {"matter_printer-technology", "panglia_branbalite_slurry", "panglia_advanced_circuit_from_panglite_fiber"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"space-science-pack", 1},
+      },
+      time = 60
     },
   },
 

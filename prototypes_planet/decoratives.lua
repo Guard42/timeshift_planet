@@ -200,11 +200,11 @@ data:extend({
       mining_time = 2,
       results =
       {
-        {type = "item", name = "panglia_panglite", amount_min = 20, amount_max = 45},
-        {type = "item", name = "iron-ore", amount_min = 0, amount_max = 10},
-        {type = "item", name = "copper-ore", amount_min = 0, amount_max = 8},
-        {type = "item", name = "coal", amount_min = 0, amount_max = 5},
-        {type = "item", name = "stone", amount_min = 0, amount_max = 3},
+        {type = "item", name = "panglia_panglite", amount_min = 40, amount_max = 75},
+        --{type = "item", name = "iron-ore", amount_min = 0, amount_max = 10},
+        --{type = "item", name = "copper-ore", amount_min = 0, amount_max = 8},
+        --{type = "item", name = "coal", amount_min = 0, amount_max = 5},
+        --{type = "item", name = "stone", amount_min = 0, amount_max = 3},
       },
     },
     map_color = {137, 118, 95},
@@ -346,11 +346,10 @@ data:extend({
       {
         --{type = "item", name = "panglia_igneous_rock", amount_min = 12, amount_max = 73},
         --{type = "item", name = "panglia_panglite", amount_min = 10, amount_max = 32},
-        {type = "item", name = "iron-ore", amount_min = 0, amount_max = 3},
-        {type = "item", name = "copper-ore", amount_min = 0, amount_max = 5},
-        --{type = "item", name = "tungsten-ore", amount_min = 0, amount_max = 5},
-
-        {type = "item", name = "uranium-238", amount_min = 0, amount_max = 5, probability = 0.4},
+        {type = "item", name = "iron-ore", amount_min = 0, amount_max = 41},
+        {type = "item", name = "copper-ore", amount_min = 0, amount_max = 25},
+        {type = "item", name = "stone", amount_min = 0, amount_max = 17},
+        {type = "item", name = "uranium-238", amount_min = 0, amount_max = 10, probability = 0.4},
 
       }
     },
