@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.4
+Date: 2025-09-28
+  Bugfixes:
+    - Fixed simulator recipes not being achievable (result would come out already spoiled)
+    - Underground belts placed on speed zones don't become 100x speed version (it had wonky and inconsistant behavior)
+  Changes:
+    - Changed probability of baby and adult specimen from 10%/50% to 90%/80% respectively
+---------------------------------------------------------------------------------------------------
 Version: 0.4.3
 Date: 2025-09-27
   Balance:

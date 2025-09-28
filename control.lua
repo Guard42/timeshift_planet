@@ -158,7 +158,7 @@ script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_e
         if surface.name == "panglia" then
             if #beacons > 0 and not string.find(entity.name, "_panglia_fast_version") then -- there's a hidden beacon
 
-                if entity.type == "inserter" or entity.type == "transport-belt" or entity.type == "underground-belt" or entity.type == "splitter" then
+                if entity.type == "inserter" or entity.type == "transport-belt" or entity.type == "splitter" then
                     local new_entity = surface.create_entity{
                         name = entity.name .. "_panglia_fast_version",
                         position = position,

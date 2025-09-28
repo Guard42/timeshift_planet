@@ -185,11 +185,11 @@ data:extend({
     ingredients = {
       {type = "item", name = "panglia_panglite", amount = 40},
       --{type = "fluid", name = "sulfuric-acid", amount = 40},
-      {type = "item", name = "uranium-238", amount = 1},
+      {type = "item", name = "uranium-238", amount = 1, show_details_in_recipe_tooltip = false},
     },
     results = {
       {type = "item", name = "panglia_panglite_fiber", amount = 10},
-      {type = "item", name = "uranium-235", amount = 1},
+      {type = "item", name = "uranium-235", amount = 1, show_details_in_recipe_tooltip = false},
     },
     main_product = "panglia_panglite_fiber",
     always_show_products = true,
@@ -592,10 +592,9 @@ data:extend({
       {type = "item", name = "panglia_universe_precursor_volcanic", amount = 1}
     },
     results = {
-
       {type="item", name="panglia_igneous_rock", amount_min = 0, amount_max = 300, probability = 1},
-      {type="item", name="uranium-238", amount_min = 0, amount_max = 25, probability = 0.4},
-      {type="item", name="solid-fuel", amount_min = 0, amount_max = 50, probability = 0.4},
+      {type="item", name="uranium-238", amount_min = 0, amount_max = 25, probability = 0.4, show_details_in_recipe_tooltip = false},
+      {type="item", name="solid-fuel", amount_min = 0, amount_max = 50, probability = 0.4, show_details_in_recipe_tooltip = false},
       --{type="item", name="calcite", amount_min = 0, amount_max = 42, probability = 0.4},
     },
     surface_conditions = panglia_only,
@@ -628,13 +627,13 @@ data:extend({
       {type = "item", name = "universe_precursor", amount = 1}
     },
     results = {
-      {type="item", name="silicon", amount_min = 0, amount_max = 75, probability = 0.3},
-      --{type="item", name="solid-fuel", amount_min = 0, amount_max = 15, probability = 0.3},
-      {type="item", name="holmium-ore", amount_min = 0, amount_max = 3, probability = 0.2},
-      {type="item", name="tungsten-ore", amount_min = 0, amount_max = 6, probability = 0.1},
-      {type="item", name="sulfur", amount_min = 0, amount_max = 25, probability = 0.25},
-      {type="item", name="calcite", amount_min = 0, amount_max = 6, probability = 0.07},
-      {type="item", name="lithium", amount_min = 0, amount_max = 6, probability = 0.07},
+      {type="item", name="silicon", amount_min = 0, amount_max = 75, probability = 0.3, show_details_in_recipe_tooltip = false},
+      --{type="item", name="solid-fuel", amount_min = 0, amount_max = 15, probability = 0.3, show_details_in_recipe_tooltip = false},
+      {type="item", name="holmium-ore", amount_min = 0, amount_max = 3, probability = 0.2, show_details_in_recipe_tooltip = false},
+      {type="item", name="tungsten-ore", amount_min = 0, amount_max = 6, probability = 0.1, show_details_in_recipe_tooltip = false},
+      {type="item", name="sulfur", amount_min = 0, amount_max = 25, probability = 0.25, show_details_in_recipe_tooltip = false},
+      {type="item", name="calcite", amount_min = 0, amount_max = 6, probability = 0.07, show_details_in_recipe_tooltip = false},
+      {type="item", name="lithium", amount_min = 0, amount_max = 6, probability = 0.07, show_details_in_recipe_tooltip = false},
     },
     surface_conditions = panglia_only,
     allow_productivity = false,
@@ -825,6 +824,8 @@ data:extend({
     enabled = false,
     surface_conditions = panglia_only,
     auto_recycle = false,
+    result_is_always_fresh = true,
+    reset_freshness_on_craft = true,
   },
 
 
@@ -863,7 +864,7 @@ data:extend({
     },
     results = 
     {
-      {type = "item", name = "panglia_cloned_specimen_body_1", amount = 1, probability = 0.1},
+      {type = "item", name = "panglia_cloned_specimen_body_1", amount = 1, probability = 0.9},
       {type = "item", name = "spoilage", amount = 2, probability = 1, show_details_in_recipe_tooltip = false},
     },
     main_product = "panglia_cloned_specimen_body_1",
@@ -877,6 +878,8 @@ data:extend({
     },
     surface_conditions = panglia_only,
     auto_recycle = false,
+    result_is_always_fresh = true,
+    reset_freshness_on_craft = true,
   },
   {
     type = "item",
@@ -909,7 +912,7 @@ data:extend({
     },
     results = 
     {
-      {type = "item", name = "panglia_cloned_specimen_body_2", amount = 1, probability = 0.5},
+      {type = "item", name = "panglia_cloned_specimen_body_2", amount = 1, probability = 0.8},
       {type = "item", name = "spoilage", amount = 1, probability = 0.5, show_details_in_recipe_tooltip = false},
     },
     main_product = "panglia_cloned_specimen_body_2",
@@ -925,6 +928,8 @@ data:extend({
     hide_from_player_crafting = true,
     surface_conditions = panglia_only,
     auto_recycle = false,
+    result_is_always_fresh = true,
+    reset_freshness_on_craft = true,
   },
   {
     type = "item",
@@ -971,6 +976,8 @@ data:extend({
     hide_from_player_crafting = true,
     surface_conditions = panglia_only,
     auto_recycle = false,
+    result_is_always_fresh = true,
+    reset_freshness_on_craft = true,
   },
 
   {

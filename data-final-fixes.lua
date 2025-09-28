@@ -39,7 +39,7 @@ for i, belt in pairs(data.raw["transport-belt"]) do
     data:extend({newbelt})
   end
 end
-
+--[[
 for i, belt in pairs(data.raw["underground-belt"]) do
   if not string.find(belt.name, "_panglia_fast_version") then
     local newbelt = table.deepcopy(belt)
@@ -56,6 +56,7 @@ for i, belt in pairs(data.raw["underground-belt"]) do
     data:extend({newbelt})
   end
 end
+]]
 
 for i, belt in pairs(data.raw["splitter"]) do
   if not string.find(belt.name, "_panglia_fast_version") then
