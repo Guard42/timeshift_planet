@@ -200,7 +200,7 @@ data:extend({
       mining_time = 2,
       results =
       {
-        {type = "item", name = "panglia_panglite", amount_min = 40, amount_max = 75},
+        {type = "item", name = "panglia_panglite", amount_min = 20, amount_max = 37},
         --{type = "item", name = "iron-ore", amount_min = 0, amount_max = 10},
         --{type = "item", name = "copper-ore", amount_min = 0, amount_max = 8},
         --{type = "item", name = "coal", amount_min = 0, amount_max = 5},
@@ -210,6 +210,7 @@ data:extend({
     map_color = {137, 118, 95},
     count_as_rock_for_filtered_deconstruction = true,
     mined_sound = sound_variations(tssounds .. "panglite", 8, 0.7),
+    mining_sound = sound_variations(tssounds .. "panglite", 8, 0.7),
     impact_category = "stone",
     render_layer = "object",
     max_health = 2000,
@@ -251,7 +252,7 @@ data:extend({
       mining_time = 1,
       results =
       {
-        {type = "item", name = "panglia_panglite", amount_min = 10, amount_max = 32},
+        {type = "item", name = "panglia_panglite", amount_min = 5, amount_max = 16},
         --{type = "item", name = "iron-ore", amount_min = 0, amount_max = 7},
         --{type = "item", name = "copper-ore", amount_min = 0, amount_max = 5},
         --{type = "item", name = "tungsten-ore", amount_min = 2, amount_max = 8}
@@ -267,6 +268,7 @@ data:extend({
     map_color = {137, 118, 95},
     count_as_rock_for_filtered_deconstruction = true,
     mined_sound = sound_variations(tssounds .. "panglite", 8, 0.7),
+    mining_sound = sound_variations(tssounds .. "panglite", 8, 0.7),
     impact_category = "stone",
     --pictures = bigrockpics,
     pictures = spritesheets_to_pictures_panglia_lights({{path = decora .. "big-panglite-rock/big-panglite-rock", frame_count = 27}}),

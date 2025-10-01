@@ -206,12 +206,12 @@ data:extend({
         recipe = "datacell-dna-raw"
       },
     },
-    prerequisites = {"panglia_planet_discovery_panglia"},
+    prerequisites = {"panglia_planet_discovery_panglia", "moshine-tech-hard-drive"},
     research_trigger =
     {
       type = "craft-item",
       item = "panglia_panglite",
-      count = 10,
+      count = 100,
     }
   },
 
@@ -576,12 +576,12 @@ end
 
 
 
-table.insert(data.raw["technology"]["panglia_advanced_optics_nanotech"].prerequisites, "planet-discovery-moshine")
-data.raw["technology"]["panglia_advanced_optics_nanotech"].research_trigger = {
-  type = "craft-item",
-  item = "glass",
-  count = 10
-}
+--table.insert(data.raw["technology"]["panglia_advanced_optics_nanotech"].prerequisites, "planet-discovery-moshine")
+--data.raw["technology"]["panglia_advanced_optics_nanotech"].research_trigger = {
+--  type = "craft-item",
+--  item = "glass",
+--  count = 10
+--}
 
 
 

@@ -227,8 +227,8 @@ data:extend({
       }
     },
     impact_category = "metal-large",
-    open_sound = {filename = "__panglia_planet__/sounds/panderoot_open.ogg", volume = 1},
-    close_sound = {filename = "__panglia_planet__/sounds/panderoot_close.ogg", volume = 1},
+    open_sound = {filename = tssounds .. "panderoot_open.ogg", volume = 1},
+    close_sound = {filename = tssounds .. "panderoot_close.ogg", volume = 1},
     working_sound =
     {
       sound =
@@ -543,6 +543,12 @@ data:extend({
 
 
 
+  {
+    type = "ammo-category",
+    name = "tesla_energy_roots",
+    icon = "__space-age__/graphics/icons/ammo-category/tesla.png",
+    subgroup = "ammo-category"
+  },
 
 
 
@@ -664,7 +670,7 @@ local function make_energy_roots_tesla_turret(num, seq)
         fire_penalty = 0.9,
         source_direction_count = 64,
         source_offset = {0, 0}, -- {0, -0.55},
-        ammo_category = "tesla",
+        ammo_category = "tesla_energy_roots",
         ammo_type =
         {
           energy_consumption = "0J",

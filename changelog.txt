@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.5
+Date: 2025-09
+  Sound:
+    - Modified planet intro music
+    - Panglite rocks now use specific panglite sounds
+  Balance:
+    - panglia_advanced_optics_nanotech requires datacell research, and triggers on panglite craft instead of glass (so it doesn't trigger when still locked)
+    - Panglite rocks drop half the panglite amount
+    - Removed panderoot overgrowth from tesla damage bonus tech
+
+---------------------------------------------------------------------------------------------------
 Version: 0.4.4
 Date: 2025-09-28
   Bugfixes:
