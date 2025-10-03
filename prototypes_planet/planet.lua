@@ -203,9 +203,10 @@ data:extend({
 
     gravity_pull = 5,
     distance = 22,
-    orientation = 0.185,
+    orientation = 0.187,
     magnitude = 0.65,
-    label_orientation = 0.35,
+    label_orientation = 0.25,
+    draw_orbit = false,
 
     --pollutant_type = "panglia_energy_roots_pollution",
     --gravity_pull = 10,
@@ -232,7 +233,7 @@ data:extend({
     {
       ["day-night-cycle"] = 4 * minute,
       ["magnetic-field"] = 56,
-      ["solar-power"] = 80,
+      ["solar-power"] = 40,
       pressure = 1401, --must be 1000 >< 2000 for agricultural tower
       gravity = 14,
       panglia_timeshift = 1,
