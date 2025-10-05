@@ -94,6 +94,13 @@ data:extend({
     results = {
       {type = "fluid", name = "lava", amount = 100},
     },
+    crafting_machine_tint =
+    {
+      primary = {245, 105, 66},
+      secondary = {245, 105, 66},
+      tertiary = {245, 105, 66},
+      quaternary = {245, 105, 66},
+    },
     --main_product = "panglia_panglite",
     allow_productivity = true,
     show_amount_in_title = false,
@@ -229,7 +236,7 @@ local function branbalitepics(num)
         size = 64,
         filename = icons .. "panglia_branbalite_light_" .. num .. ".png",
         scale = 0.5,
-        tint = {0.3, 0.3, 0.3, 0.3}
+        --tint = {0.3, 0.3, 0.3, 0.3}
       }
     }
   }
@@ -300,6 +307,13 @@ data:extend({
     enabled = false,
     allow_decomposition = false,
     surface_conditions = panglia_only,
+    crafting_machine_tint =
+    {
+      primary = {82, 199, 238},
+      secondary = {82, 199, 238},
+      tertiary = {82, 199, 238},
+      quaternary = {82, 199, 238},
+    },
   },
 
 
@@ -395,8 +409,10 @@ data:extend({
     },
     crafting_machine_tint =
     {
-      primary = {r = 151, g = 66, b = 0, a = 1.000},
-      secondary = {r = 0.3, g = 0.9, b = 0.3, a = 1.000},
+      primary = {66, 245, 156}, -- #44b838ff
+      secondary = {r = 0.432, g = 0.793, b = 0.386, a = 1.000}, -- #6eca62ff
+      tertiary = {r = 0.647, g = 0.471, b = 0.396, a = 1.000}, -- #a57865ff
+      quaternary = {r = 1.000, g = 0.395, b = 0.127, a = 1.000}, -- #ff6420ff
     },
     main_product = "lubricant",
     allow_productivity = true,
@@ -425,8 +441,10 @@ data:extend({
     main_product = "rocket-fuel",
     crafting_machine_tint =
     {
-      primary = {r = 151, g = 66, b = 0, a = 1.000},
-      secondary = {r = 0.3, g = 0.9, b = 0.3, a = 1.000},
+      primary = {82, 199, 238},
+      secondary = {82, 199, 238},
+      tertiary = {82, 199, 238},
+      quaternary = {82, 199, 238},
     },
     allow_decomposition = false,
     surface_conditions = panglia_only,
@@ -452,11 +470,6 @@ data:extend({
       {type = "item", name = "advanced-circuit", amount = 1}
     },
     main_product = "advanced-circuit",
-    crafting_machine_tint =
-    {
-      primary = {r = 151, g = 66, b = 0, a = 1.000},
-      secondary = {r = 0.3, g = 0.9, b = 0.3, a = 1.000},
-    },
     allow_decomposition = false,
     surface_conditions = panglia_only,
   },
@@ -552,6 +565,13 @@ data:extend({
     results = {
       {type = "item", name = "panglia_universe_precursor_volcanic", amount = 1}
     },
+    crafting_machine_tint =
+    {
+      primary = {245, 105, 66},
+      secondary = {245, 105, 66},
+      tertiary = {245, 105, 66},
+      quaternary = {245, 105, 66},
+    },
     allow_productivity = true,
     enabled = true,
     surface_conditions = panglia_only,
@@ -572,6 +592,13 @@ data:extend({
     },
     results = {
       {type = "item", name = "universe_precursor", amount = 1}
+    },
+    crafting_machine_tint =
+    {
+      primary = {82, 199, 238},
+      secondary = {82, 199, 238},
+      tertiary = {82, 199, 238},
+      quaternary = {82, 199, 238},
     },
     allow_productivity = true,
     enabled = true,

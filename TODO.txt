@@ -9,4 +9,8 @@ add data pipes to cloning vat, add recipes to turn eggs into dna data, then dna 
 time warp data - processor that takes forever even with ai cores
 
 
-remove panderoots from tesla damage
+make datacell with sentient processor for latest techs
+
+(make defense drone)
+
+computer recipe tints

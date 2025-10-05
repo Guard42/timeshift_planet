@@ -1,17 +1,22 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.4.5
+Version: 0.5.0
 Date: 2025-09
+  Changes:
+    - Added 4 menu simulations
+    - Generate igneous rocks and mixed rocks if coming from pre-0.4
   Sound:
     - Modified planet intro music
     - Panglite rocks now use specific panglite sounds
   Balance:
-    - Tech advanced_optics_nanotech requires datacell research, and triggers on panglite craft instead of glass (so it doesn't trigger when still locked)
+    - Tech "advanced optics and nanotech" requires datacell research, and triggers on panglite craft instead of glass (so it doesn't trigger when still locked)
     - Panglite rocks drop half the panglite amount
     - Removed panderoot overgrowth from tesla damage bonus tech
     - Cloning vat require nanotech tech
     - Datacell [dna] recipe moved to cloning vat
     - Halved solar power in atmosphere (to 40%)
-  UI:
+  Graphics:
+    - Added some recipe tints
+    - Fixed branbalite item glow
     - Planet is now a moon of Gleba and doesn't draw an orbit around the sun. Adjusted position and planet orientation
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.4

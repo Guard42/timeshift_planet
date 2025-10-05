@@ -23,4 +23,5 @@ require "prototypes.simulation_chamber"
 require "prototypes.crushing"
 require "prototypes.achievements"
 require "prototypes.compatibility"
+require "prototypes.menu-simulations"
 
