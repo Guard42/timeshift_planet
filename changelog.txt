@@ -9,6 +9,7 @@ Date: 2025-09
     - Panglite rocks now use specific panglite sounds
   Balance:
     - Halved the speed of speed zones (to 50x for now) (every recipe meant to be used with them have their time scaled too)
+    - Made branbalite spoil in 90m (from 25) and stack to 10 (from 50) to avoid clogging the agricultural tower
     - Tech "advanced optics and nanotech" requires datacell research, and triggers on panglite craft instead of glass (so it doesn't trigger when still locked)
     - Panglite rocks drop half the panglite amount
     - Removed panderoot overgrowth from tesla damage bonus tech
